@@ -1,0 +1,22 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+#draw-form {
+    margin: auto;
+    width: 50%;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.center-block {
+    margin: auto;
+    display: block;
+}

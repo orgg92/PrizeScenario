@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/home.css" />
+</head>
+<body>
+    <div id="draw-form">
+        <div class="text-center">
+
+            Select a number of entries to draw: <br />
+
+            <form method="post">
+                <div class="form-group">
+                    
+                    <input class="center-block" max="5" min="1" asp-for="Count" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-outline-primary btn-sm">Pick Winners!</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
