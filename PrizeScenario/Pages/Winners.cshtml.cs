@@ -25,8 +25,8 @@ namespace PrizeScenario.Pages
             
             Participants = await _drawService.DrawWinners(count);
 
-            // because the db size is so small, we're bound to get duplicates the higher 'count' so in reality our list is smaller than the count but in practise I imagine this would be less noticable 
-            // i would probably consider writing another method with Participants as a parameter and then find records where UserId != any entries of the list
+            // because the db seed size is so small, we're bound to get duplicates the higher 'count' but in practise I imagine this would be less noticable 
+            // i would probably consider writing another method with Participants as a parameter and then find records where UserId != any entries of the list to build up the list to the desired size
 
             // remove any duplicates
             Participants = Participants.Distinct().ToList();
